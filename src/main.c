@@ -37,7 +37,7 @@ static void print_version(void)
 static void sigint_handler(int sig)
 {
   (void)sig;
-  terminate_retrobasic(EXIT_SUCCESS);
+  pause_requested = 1;
 }
 
 /* usage short form, just a list of the switches */
